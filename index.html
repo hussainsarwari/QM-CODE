@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      :root{
+        --White: hsl(0, 0%, 100%);
+        --Lightgray: hsl(212, 45%, 89%);
+        --Grayishblue: hsl(220, 15%, 55%);
+        --Darkblue: hsl(218, 44%, 22%);
+        --Mobile: 375px;
+        --Desktop: 1440px;
+        --fontsize:15px;
+      }
+      @font-face {
+        font-family: myfont;
+        src: url("Outfit-VariableFont_wght.ttf");
+      }
+      *{
+        font-size: var(--fontsize);
+        margin: 0;
+        padding: 0;
+        font-family: 'myfont';
+        box-sizing: border-box;
+      }
+      body{
+        background-color: var(--Grayishblue);
+        display: grid;
+      }
+.qm{
+  background: #fff;
+    width: 23%;
+    padding: 1em;
+    height: 35em;
+    margin:2em auto;
+    border-radius: 1em;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+img{
+  width: 100%;
+    border-radius: .5em;
+}
+#title{
+  padding: 0.8em;
+    font-weight: 700;
+}
+#text{
+  padding: 0.8em;
+    font-weight: 400;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="qm">
+  <img src="images/image-qr-code.png" alt="qmcode" >
+  <p id="title">
+    Imporve your front-end  skills by building projects
+  </p >
+  <p id='text'>Scan the  QM code to visit Frontend Mentor and take your coding skills to the next level</p>
+</div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohammad hussain sarwari</a>.
+  </div>
+</body>
+</html>
